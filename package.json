@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "repository": "https://github.com/wofwiki/Webs",
   "scripts": {
+    "run:nomaps": "node .",
     "run": "node --enable-source-maps .",
     "start": "npm run build && npm run run",
     "start:dev": "nodemon",
@@ -13,6 +14,14 @@
   "author": "wofwiki <wings.of.fire.fandom.wiki@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@types/lodash": "^4.14.178",
+    "dotenv": "^16.0.0",
+    "fero-dc": "^3.0.5",
+    "lodash": "^4.17.21",
+    "mongoose": "^6.2.0"
+  },
+  "devDependencies": {
+    "@types/mongoose": "^5.11.97",
     "nodemon": "^2.0.15",
     "ts-node": "^10.4.0",
     "typescript": "^4.5.4"
